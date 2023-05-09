@@ -6,13 +6,28 @@
 	"version": "0.1.0",
 	"exports": {
 		".": {
+			"import": "./lib/importable-document-kdl-tsconfig.mjs",
 			"require": "./lib/importable-document-kdl-tsconfig.cjs"
+		},
+		"./astro": {
+			"import": "./lib/importable-document-kdl-astro.mjs"
 		},
 		"./tsconfig": {
+			"import": "./lib/importable-document-kdl-tsconfig.mjs",
 			"require": "./lib/importable-document-kdl-tsconfig.cjs"
 		},
-		"./kdl/tsconfig": {
+		"./vite": {
+			"import": "./lib/importable-document-kdl-rollup.mjs"
+		},
+		"./css/astro": {
+			"import": "./lib/importable-document-kdl-astro.mjs"
+		},
+		"./css/tsconfig": {
+			"import": "./lib/importable-document-kdl-tsconfig.mjs",
 			"require": "./lib/importable-document-kdl-tsconfig.cjs"
+		},
+		"./css/vite": {
+			"import": "./lib/importable-document-kdl-rollup.mjs"
 		}
 	},
 	"files": [
