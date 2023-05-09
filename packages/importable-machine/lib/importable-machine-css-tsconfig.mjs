@@ -4,18 +4,18 @@
 /** @typedef {import('postcss').AtRule} AtRuleNode */
 /** @typedef {{ id: string | null, initial: string | null, context: any, states: { [name: string]: string[] } }} MachineConfig */
 
-const { parse: parseCSS } = require('postcss')
+import { parse as parseCSS } from 'postcss'
 
-exports.testImportModuleSpecifier = /** @type {ImportablePlugin['testImportModuleSpecifier']} */ (moduleName) => (
+export const testImportModuleSpecifier = /** @type {ImportablePlugin['testImportModuleSpecifier']} */ (moduleName) => (
 	moduleName.endsWith('.css')
 )
 
-exports.testImportAttributes = /** @type {ImportablePlugin['testImportAttributes']} */ (importAttributes) => (
+export const testImportAttributes = /** @type {ImportablePlugin['testImportAttributes']} */ (importAttributes) => (
 	importAttributes.type === 'machine' &&
 	importAttributes.from === 'css'
 )
 
-exports.generateTypeScriptDefinition = /** @type {ImportablePlugin['generateTypeScriptDefinition']} */ (fileName, _importAttributes, code) => {
+export const generateTypeScriptDefinition = /** @type {ImportablePlugin['generateTypeScriptDefinition']} */ (fileName, _importAttributes, code) => {
 	const rootNode = parseCSS(code, { from: fileName }).nodes[0]
 
 	if (rootNode && rootNode.type === 'atrule' && rootNode.name === 'machine') {

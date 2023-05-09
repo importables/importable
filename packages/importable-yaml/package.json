@@ -6,12 +6,12 @@
 	"version": "0.1.0",
 	"exports": {
 		".": {
-			"require": "./lib/importable-yaml-tsconfig.cjs",
-			"import": "./lib/importable-yaml-tsconfig.mjs"
+			"import": "./lib/importable-yaml-tsconfig.mjs",
+			"require": "./lib/importable-yaml-tsconfig.cjs"
 		},
 		"./tsconfig": {
-			"require": "./lib/importable-yaml-tsconfig.cjs",
-			"import": "./lib/importable-yaml-tsconfig.mjs"
+			"import": "./lib/importable-yaml-tsconfig.mjs",
+			"require": "./lib/importable-yaml-tsconfig.cjs"
 		},
 		"./astro": {
 			"import": "./lib/importable-yaml-astro.mjs"

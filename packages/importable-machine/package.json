@@ -6,13 +6,28 @@
 	"version": "0.1.0",
 	"exports": {
 		".": {
+			"import": "./lib/importable-machine-css-tsconfig.mjs",
 			"require": "./lib/importable-machine-css-tsconfig.cjs"
+		},
+		"./astro": {
+			"import": "./lib/importable-machine-css-astro.mjs"
 		},
 		"./tsconfig": {
+			"import": "./lib/importable-machine-css-tsconfig.mjs",
 			"require": "./lib/importable-machine-css-tsconfig.cjs"
 		},
+		"./vite": {
+			"import": "./lib/importable-machine-css-rollup.mjs"
+		},
+		"./css/astro": {
+			"import": "./lib/importable-machine-css-astro.mjs"
+		},
 		"./css/tsconfig": {
+			"import": "./lib/importable-machine-css-tsconfig.mjs",
 			"require": "./lib/importable-machine-css-tsconfig.cjs"
+		},
+		"./css/vite": {
+			"import": "./lib/importable-machine-css-rollup.mjs"
 		}
 	},
 	"files": [

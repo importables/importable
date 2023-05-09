@@ -34,6 +34,6 @@
 	"typescript.preferences.importModuleSpecifier": "non-relative",
 	"typescript.preferences.importModuleSpecifierEnding": "auto",
 	"typescript.preferences.quoteStyle": "single",
-	"typescript.tsdk": "./node_modules/typescript/lib",
+	"typescript.tsdk": "node_modules/typescript/lib",
 	"typescript.updateImportsOnFileMove.enabled": "always"
 }
