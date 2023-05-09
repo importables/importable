@@ -100,7 +100,7 @@ const generateMachineDTS = (/** @type {MachineConfig} */ {
 	`type Event = { type: EventType }`,
 	`type State = { value: keyof States; context: Context }`,
 	``,
-	`export default Object as {`,
+	`export default Object as StateMachine.Machine<Context, Event, State> & {`,
 		`config: {`,
 			`id: MachineID`,
 			`initial: ConfigInitial`,

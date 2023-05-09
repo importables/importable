@@ -79,7 +79,7 @@ const generateMachineDTS = (/** @type {MachineConfig} */ {
 	``,
 	`type MachineID = ${stringify(id)}`,
 	`type ConfigInitial = ${stringify(initial)}`,
-	`type Context = ${stringify(context)}`,
+	`type Context = ${stringify(Object(context))}`,
 	`type States = {\n${
 		Object.entries(states).reduce(
 			(/** @type {string[]} */ stateDTS, [ stateName, stateNames ]) => {
@@ -100,7 +100,7 @@ const generateMachineDTS = (/** @type {MachineConfig} */ {
 	`type Event = { type: EventType }`,
 	`type State = { value: keyof States; context: Context }`,
 	``,
-	`export default Object as {`,
+	`export default Object as StateMachine.Machine<Context, Event, State> & {`,
 		`config: {`,
 			`id: MachineID`,
 			`initial: ConfigInitial`,

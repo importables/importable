@@ -35,6 +35,7 @@
 	],
 	"dependencies": {
 		"@xstate/fsm": "^2.0",
+		"es-module-lexer": "^1.2",
 		"postcss": "^8.4"
 	},
 	"devDependencies": {

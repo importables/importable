@@ -12,6 +12,7 @@
 		"@importable/document": "*",
 		"@importable/machine": "*",
 		"@importable/yaml": "*",
+		"@xstate/fsm": "^2.0",
 		"astro": "^2.4",
 		"importable": "*"
 	}
