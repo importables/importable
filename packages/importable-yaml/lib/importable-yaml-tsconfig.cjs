@@ -1,8 +1,8 @@
 // @ts-check
 
-const { parse: parseYML } = require('yaml')
-
 /** @typedef {import('importable').ImportablePlugin} ImportablePlugin */
+
+const { parse: parseYML } = require('yaml')
 
 exports.testImportModuleSpecifier = /** @type {ImportablePlugin['testImportModuleSpecifier']} */ (moduleName) => (
 	moduleName.endsWith('.yaml') ||

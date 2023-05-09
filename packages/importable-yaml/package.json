@@ -6,20 +6,30 @@
 	"version": "0.1.0",
 	"exports": {
 		".": {
-			"require": "./lib/importable-yaml-tsconfig.cjs"
+			"require": "./lib/importable-yaml-tsconfig.cjs",
+			"import": "./lib/importable-yaml-tsconfig.mjs"
 		},
 		"./tsconfig": {
-			"require": "./lib/importable-yaml-tsconfig.cjs"
+			"require": "./lib/importable-yaml-tsconfig.cjs",
+			"import": "./lib/importable-yaml-tsconfig.mjs"
+		},
+		"./astro": {
+			"import": "./lib/importable-yaml-astro.mjs"
+		},
+		"./vite": {
+			"import": "./lib/importable-yaml-rollup.mjs"
 		}
 	},
 	"files": [
 		"lib"
 	],
 	"dependencies": {
-		"yaml": "^2.2.2"
+		"yaml": "^2.2"
 	},
 	"devDependencies": {
-		"importable": "*"
+		"astro": "^2.4",
+		"importable": "*",
+		"vite": "^4.3"
 	},
 	"repository": {
 		"type": "git",

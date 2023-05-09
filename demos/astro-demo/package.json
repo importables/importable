@@ -1,22 +1,18 @@
 {
 	"$schema": "https://json.schemastore.org/package",
 	"private": true,
-	"name": "demo",
+	"name": "demo.astro",
 	"type": "module",
-	"peerDependencies": {
-		"typescript": "^5"
-	},
-	"main": "lib",
-	"files": [
-		"lib"
-	],
 	"scripts": {
-		"test": "tsc --project tsconfig.json"
+		"start": "astro dev",
+		"build": "astro build",
+		"serve": "astro preview"
 	},
-	"dependencies": {
+	"devDependencies": {
 		"@importable/document": "*",
 		"@importable/machine": "*",
 		"@importable/yaml": "*",
+		"astro": "^2.4",
 		"importable": "*"
 	}
 }

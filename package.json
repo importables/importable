@@ -4,8 +4,8 @@
 	"name": "root",
 	"type": "module",
 	"workspaces": [
-		"packages/*",
-		"demo"
+		"demos/*",
+		"packages/*"
 	],
 	"engines": {
 		"node": ">=18",
@@ -46,13 +46,15 @@
 	},
 	"scripts": {
 		"build": "node packages/importable/run/build.js",
-		"package:importable": "npm --workspace=\"importable\" pack --access public",
-		"package:importable-document": "npm --workspace=\"@importable/document\" pack --access public",
-		"package:importable-machine": "npm --workspace=\"@importable/machine\" pack --access public",
-		"package:importable-yaml": "npm --workspace=\"@importable/yaml\" pack --access public",
-		"release:importable": "npm --workspace=\"importable\" publish --access public",
-		"release:importable-document": "npm --workspace=\"@importable/document\" publish --access public",
-		"release:importable-machine": "npm --workspace=\"@importable/machine\" publish --access public",
-		"release:importable-yaml": "npm --workspace=\"@importable/yaml\" publish --access public"
+		"start:astro": "npm --workspace=demo.astro start",
+		"start:vite": "npm --workspace=demo.vite start",
+		"package:importable": "npm --workspace=importable pack --access public",
+		"package:importable-document": "npm --workspace=@importable/document pack --access public",
+		"package:importable-machine": "npm --workspace=@importable/machine pack --access public",
+		"package:importable-yaml": "npm --workspace=@importable/yaml pack --access public",
+		"release:importable": "npm --workspace=importable publish --access public",
+		"release:importable-document": "npm --workspace=@importable/document publish --access public",
+		"release:importable-machine": "npm --workspace=@importable/machine publish --access public",
+		"release:importable-yaml": "npm --workspace=@importable/yaml publish --access public"
 	}
 }

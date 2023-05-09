@@ -14,6 +14,9 @@ console.assert(config.doe === 'a deer, a female deer')
 npm install importable @importable/yaml
 ```
 
+To support YAML from the TypeScript server,
+add **@importable/yaml** to **tsconfig.json**:
+
 ```js
 {
   "compilerOptions": {
@@ -27,6 +30,34 @@ npm install importable @importable/yaml
     ]
   }
 }
+```
+
+To support YAML within Vite,
+add **@importable/yaml** to **vite.config.json**:
+
+```js
+import { defineConfig } from 'vite'
+import importableYAML from '@importable/yaml/vite'
+
+export default defineConfig({
+  plugins: [
+    importableYAML()
+  ]
+})
+```
+
+To support YAML within Astro,
+add **@importable/yaml** to **astro.config.json**:
+
+```js
+import { defineConfig } from 'astro'
+import importableYAML from '@importable/yaml/astro'
+
+export default defineConfig({
+  integrations: [
+    importableYAML()
+  ]
+})
 ```
 
 ## License
