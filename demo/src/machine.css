@@ -1,0 +1,15 @@
+@machine toggle {
+	initial: active;
+
+	@state inactive {
+		@on toggle {
+			transition: active;
+		}
+	}
+
+	@state active {
+		@on toggle {
+			transition: inactive;
+		}
+	}
+}

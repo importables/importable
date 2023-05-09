@@ -1,0 +1,71 @@
+{
+	"$schema": "https://json.schemastore.org/package",
+	"name": "@importable/machine",
+	"description": "Import state machines with strong typing based on import attributes",
+	"type": "module",
+	"version": "0.1.0",
+	"exports": {
+		".": {
+			"require": "./lib/importable-machine-css-tsconfig.cjs"
+		},
+		"./tsconfig": {
+			"require": "./lib/importable-machine-css-tsconfig.cjs"
+		},
+		"./css/tsconfig": {
+			"require": "./lib/importable-machine-css-tsconfig.cjs"
+		}
+	},
+	"files": [
+		"lib"
+	],
+	"dependencies": {
+		"@xstate/fsm": "^2.0",
+		"postcss": "^8.4"
+	},
+	"devDependencies": {
+		"importable": "*"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/importables/importable.git",
+		"directory": "packages/importable-machine"
+	},
+	"homepage": "https://github.com/importables/importable/",
+	"bugs": "https://github.com/importables/importable/issues",
+	"author": "importables",
+	"license": "CC0-1.0",
+	"keywords": [
+		"assert",
+		"asserts",
+		"assertions",
+		"attribute",
+		"attributes",
+		"css",
+		"file",
+		"files",
+		"fsm",
+		"import",
+		"importable",
+		"importable-plugin",
+		"imports",
+		"machine",
+		"plugin",
+		"javascript",
+		"js",
+		"jsconfig",
+		"rollup",
+		"rollup-plugin",
+		"state",
+		"strong",
+		"ts",
+		"tsconfig",
+		"type",
+		"typed",
+		"types",
+		"typescript",
+		"typescript-plugin",
+		"typing",
+		"vite",
+		"vite-plugin"
+	]
+}

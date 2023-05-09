@@ -1,0 +1,71 @@
+{
+	"$schema": "https://json.schemastore.org/package",
+	"name": "importable",
+	"version": "0.1.0",
+	"description": "Import files with strong typing based on import attributes",
+	"main": "lib/importable-tsconfig.cjs",
+	"module": "lib/importable-tsconfig.mjs",
+	"types": "lib/importable-tsconfig.d.ts",
+	"exports": {
+		".": {
+			"import": "./lib/importable-tsconfig.mjs",
+			"require": "./lib/importable-tsconfig.cjs",
+			"types": "./lib/importable-tsconfig.d.ts"
+		},
+		"./tsconfig": {
+			"import": "./lib/importable-tsconfig.mjs",
+			"require": "./lib/importable-tsconfig.cjs",
+			"types": "./lib/importable-tsconfig.d.ts"
+		}
+	},
+	"files": [
+		"lib"
+	],
+	"peerDependencies": {
+		"typescript": "^5"
+	},
+	"devDependencies": {
+		"@rollup/plugin-typescript": "11.1.0",
+		"rollup": "3.21.5"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/importables/importable.git",
+		"directory": "packages/importable"
+	},
+	"homepage": "https://github.com/importables/importable/",
+	"bugs": "https://github.com/importables/importable/issues",
+	"author": "importables",
+	"license": "CC0-1.0",
+	"keywords": [
+		"assert",
+		"asserts",
+		"assertions",
+		"attribute",
+		"attributes",
+		"file",
+		"files",
+		"import",
+		"importable",
+		"imports",
+		"imports",
+		"plugin",
+		"javascript",
+		"js",
+		"jsconfig",
+		"rollup",
+		"rollup-plugin",
+		"strong",
+		"ts",
+		"tsconfig",
+		"type",
+		"typed",
+		"types",
+		"typescript",
+		"typescript-plugin",
+		"typing",
+		"vite",
+		"vite-plugin",
+		"with"
+	]
+}

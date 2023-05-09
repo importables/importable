@@ -1,0 +1,39 @@
+{
+	"editor.codeActionsOnSave": {
+		"source.fixAll": true
+	},
+	"editor.insertSpaces": false,
+	"editor.useTabStops": true,
+
+	"explorer.fileNesting.enabled": true,
+	"explorer.fileNesting.expand": false,
+	"explorer.fileNesting.patterns": {
+		"*.js": "$(capture).d.ts, $(capture).js.map",
+		"*.cjs": "$(capture).d.ts, $(capture).cjs.map",
+		"*.mjs": "$(capture).d.ts, $(capture).mjs.map"
+	},
+
+	"files.exclude": {
+		"**/.vscode": true,
+		"**/*[.-]lock*": true,
+		"**/node_modules": true,
+	},
+
+	"javascript.preferences.importModuleSpecifier": "non-relative",
+	"javascript.preferences.importModuleSpecifierEnding": "auto",
+	"javascript.preferences.quoteStyle": "single",
+	"javascript.updateImportsOnFileMove.enabled": "always",
+
+	"js/ts.implicitProjectConfig.module": "NodeNext",
+	"js/ts.implicitProjectConfig.target": "ESNext",
+
+	"prettier.ignorePath": "/.vscode/.prettierignore",
+	"prettier.useEditorConfig": true,
+
+	"typescript.enablePromptUseWorkspaceTsdk": true,
+	"typescript.preferences.importModuleSpecifier": "non-relative",
+	"typescript.preferences.importModuleSpecifierEnding": "auto",
+	"typescript.preferences.quoteStyle": "single",
+	"typescript.tsdk": "./node_modules/typescript/lib",
+	"typescript.updateImportsOnFileMove.enabled": "always"
+}

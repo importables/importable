@@ -1,0 +1,22 @@
+{
+	"$schema": "https://json.schemastore.org/package",
+	"private": true,
+	"name": "demo",
+	"type": "module",
+	"peerDependencies": {
+		"typescript": "^5"
+	},
+	"main": "lib",
+	"files": [
+		"lib"
+	],
+	"scripts": {
+		"test": "tsc --project tsconfig.json"
+	},
+	"dependencies": {
+		"@importable/document": "*",
+		"@importable/machine": "*",
+		"@importable/yaml": "*",
+		"importable": "*"
+	}
+}

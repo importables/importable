@@ -1,0 +1,58 @@
+{
+	"$schema": "https://json.schemastore.org/package",
+	"private": true,
+	"name": "root",
+	"type": "module",
+	"workspaces": [
+		"packages/*",
+		"demo"
+	],
+	"engines": {
+		"node": ">=18",
+		"npm": ">=8"
+	},
+	"devDependencies": {
+		"@types/node": "20.1.0",
+		"@typescript-eslint/eslint-plugin": "5.59.2",
+		"@typescript-eslint/parser": "5.59.2",
+		"eslint": "8.40.0",
+		"eslint-config-dev": "3.3.1",
+		"eslint-plugin-json": "3.1.0",
+		"typescript": "5.0.4"
+	},
+	"eslintConfig": {
+		"extends": [
+			"dev/ts/nosemi"
+		],
+		"plugins": [
+			"json"
+		],
+		"ignorePatterns": [
+			"**/lib/**"
+		]
+	},
+	"prettier": {
+		"singleQuote": true,
+		"useTabs": true,
+		"overrides": [
+			{
+				"files": "*.md",
+				"options": {
+					"tabWidth": 2,
+					"useTabs": false
+				}
+			}
+		]
+	},
+	"scripts": {
+		"build": "node packages/importable/run/build.js",
+		"package:importable": "npm --workspace=\"importable\" pack --access public",
+		"package:importable-document": "npm --workspace=\"@importable/document\" pack --access public",
+		"package:importable-machine": "npm --workspace=\"@importable/machine\" pack --access public",
+		"package:importable-yaml": "npm --workspace=\"@importable/yaml\" pack --access public",
+		"release:importable": "npm --workspace=\"importable\" publish --access public",
+		"release:importable-document": "npm --workspace=\"@importable/document\" publish --access public",
+		"release:importable-machine": "npm --workspace=\"@importable/machine\" publish --access public",
+		"release:importable-yaml": "npm --workspace=\"@importable/yaml\" publish --access public"
+	}
+}

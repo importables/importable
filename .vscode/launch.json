@@ -1,0 +1,49 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Launch Client",
+			"type": "node",
+			"request": "launch",
+			"runtimeExecutable": "${execPath}",
+			"env": {
+				"TSS_DEBUG": "5859"
+			},
+			"args": [
+				"usage"
+			],
+			"outFiles": [
+				"${workspaceRoot}/usage/lib/index.js"
+			]
+		},
+		{
+			"name": "Attach to Server",
+			"type": "node",
+			"request": "attach",
+			"port": 9559,
+			"restart": true,
+			"sourceMaps": true,
+			"outFiles": [
+				"${workspaceRoot}/plugin/lib/index.js"
+			],
+			"skipFiles": [
+				"<node_internals>/**"
+			]
+		},
+		{
+			"name": "Attach to VS Code TS Server via Port",
+			"type": "node",
+			"request": "attach",
+			"processId": "${command:PickProcess}"
+		}
+	],
+	"compounds": [
+		{
+			"name": "Launch Extension",
+			"configurations": [
+				"Launch Client",
+				"Attach to Server"
+			]
+		}
+	]
+}

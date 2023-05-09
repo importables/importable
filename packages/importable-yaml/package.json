@@ -1,0 +1,64 @@
+{
+	"$schema": "https://json.schemastore.org/package",
+	"name": "@importable/yaml",
+	"description": "Import YAML files with strong typing based on import attributes",
+	"type": "module",
+	"version": "0.1.0",
+	"exports": {
+		".": {
+			"require": "./lib/importable-yaml-tsconfig.cjs"
+		},
+		"./tsconfig": {
+			"require": "./lib/importable-yaml-tsconfig.cjs"
+		}
+	},
+	"files": [
+		"lib"
+	],
+	"dependencies": {
+		"yaml": "^2.2.2"
+	},
+	"devDependencies": {
+		"importable": "*"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/importables/importable.git",
+		"directory": "packages/importable-yaml"
+	},
+	"homepage": "https://github.com/importables/importable/",
+	"bugs": "https://github.com/importables/importable/issues",
+	"author": "importables",
+	"license": "CC0-1.0",
+	"keywords": [
+		"assert",
+		"asserts",
+		"assertions",
+		"attribute",
+		"attributes",
+		"file",
+		"files",
+		"import",
+		"importable",
+		"importable-plugin",
+		"imports",
+		"plugin",
+		"javascript",
+		"js",
+		"jsconfig",
+		"rollup",
+		"rollup-plugin",
+		"strong",
+		"ts",
+		"tsconfig",
+		"type",
+		"typed",
+		"types",
+		"typescript",
+		"typescript-plugin",
+		"typing",
+		"vite",
+		"vite-plugin",
+		"yaml"
+	]
+}
