@@ -33,7 +33,7 @@ add **@importable/yaml** to **tsconfig.json**:
 ```
 
 To support YAML within Vite,
-add **@importable/yaml** to **vite.config.json**:
+add **@importable/yaml** to **vite.config.js**:
 
 ```js
 import { defineConfig } from 'vite'
@@ -47,7 +47,7 @@ export default defineConfig({
 ```
 
 To support YAML within Astro,
-add **@importable/yaml** to **astro.config.json**:
+add **@importable/yaml** to **astro.config.js**:
 
 ```js
 import { defineConfig } from 'astro'
