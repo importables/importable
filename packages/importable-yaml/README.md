@@ -32,6 +32,12 @@ add **@importable/yaml** to **tsconfig.json**:
 }
 ```
 
+## Integrations
+
+- [Integration with Vite](#vite-integration)
+- [Integration with Astro](#astro-integration)
+- [Integration with Next](#next-integration)
+
 ### Vite Integration
 
 To support YAML within Vite,
@@ -67,7 +73,7 @@ export default defineConfig({
 ### Next Integration
 
 To support YAML within Next,
-add **@importable/yaml** to **next.config.js**:
+add **@importable/next** to **next.config.js**:
 
 ```js
 const withYaml = require('@importable/yaml/next');

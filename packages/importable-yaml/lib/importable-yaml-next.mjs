@@ -1,18 +1,18 @@
 // @ts-check
 
 /** @typedef {import('next').NextConfig} NextConfig */
-/** @typedef {{ (): { (nextConfig: Partial<NextConfig>): NextConfig } }} NextPlugin */
+/** @typedef {{ (nextConfig: Partial<NextConfig>): NextConfig }} NextPlugin */
 
-import { resolve } from 'node:path'
+import { fileURLToPath } from 'node:url'
 
-const loader = resolve(__dirname, 'importable-yaml-webpack.cjs')
+const loader = fileURLToPath(new URL('./importable-yaml-webpack.cjs', import.meta.url))
 
 const rule = {
 	test: /\.ya?ml$/,
 	loader,
 }
 
-module.exports = /** @type {NextPlugin} */ (
+export default /** @type {NextPlugin} */ (
 	(nextConfig = {}) => {
 		/** @type {NextConfig} */
 		const appliedConfig = {

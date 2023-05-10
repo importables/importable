@@ -1,0 +1,38 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"extends": "../../tsconfig.json",
+	"compilerOptions": {
+		"plugins": [
+			{
+				"name": "next"
+			},
+			{
+				"name": "importable",
+				"plugins": [
+					"@importable/document",
+					"@importable/machine",
+					"@importable/yaml"
+				]
+			}
+		],
+		"paths": {
+			"@/*": [
+				"./src/*"
+			]
+		},
+		"lib": [
+			"dom",
+			"dom.iterable",
+			"esnext"
+		]
+	},
+	"include": [
+		"next-env.d.ts",
+		"**/*.ts",
+		"**/*.tsx",
+		".next/types/**/*.ts"
+	],
+	"exclude": [
+		"node_modules"
+	]
+}

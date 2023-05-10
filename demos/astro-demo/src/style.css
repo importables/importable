@@ -1,11 +1,14 @@
+* {
+	box-sizing: border-box;
+}
+
 :root {
 	font: 100%/1.5 system-ui;
 
-	color-scheme: light dark;
-	color: rgba(255, 255, 255, 0.87);
+	/* Appearance */
 	background-color: #242424;
-
-	font-synthesis: none;
+	color: rgba(255, 255, 255, 0.87);
+	color-scheme: light dark;
 }
 
 body {
@@ -14,10 +17,14 @@ body {
 	/* Layout */
 	flex-flow: column;
 	justify-content: center;
-	margin: max(1rem, 5%);
+	margin: max(1rem, 2.5vmin);
 
 	/* Text */
 	text-align: center;
+}
+
+main {
+	display: contents;
 }
 
 h1 {

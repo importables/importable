@@ -11,21 +11,30 @@
 		"module": "ESNext",
 		"moduleDetection": "force",
 		"moduleResolution": "nodenext",
+		"resolveJsonModule": true,
 
 		/* Emit */
 		"noEmit": true,
 		"sourceMap": true,
 
+		/* JavaScript Support */
+		"allowJs": true,
+
 		/* Interop Constraints */
 		"esModuleInterop": true,
+		"isolatedModules": true,
 		"forceConsistentCasingInFileNames": true,
 		"verbatimModuleSyntax": true,
 
-		/* Completeness */
-		"skipLibCheck": true,
-
 		/* Language and Environment */
-		"target": "ESNext"
+		"jsx": "preserve",
+		"target": "ESNext",
+
+		/* Projects */
+		"incremental": true,
+
+		/* Completeness */
+		"skipLibCheck": true
 	},
 	"paths": [
 		"plugin/src/**"

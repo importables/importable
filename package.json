@@ -47,6 +47,7 @@
 	"scripts": {
 		"build": "node packages/importable/run/build.js",
 		"start:astro": "npm --workspace=demo.astro start",
+		"start:next": "npm --workspace=demo.next run dev",
 		"start:vite": "npm --workspace=demo.vite start",
 		"package:importable": "npm --workspace=importable pack --access public",
 		"package:importable-document": "npm --workspace=@importable/document pack --access public",

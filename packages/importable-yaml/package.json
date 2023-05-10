@@ -13,6 +13,7 @@
 			"import": "./lib/importable-yaml-astro.mjs"
 		},
 		"./next": {
+			"import": "./lib/importable-yaml-next.mjs",
 			"require": "./lib/importable-yaml-next.cjs"
 		},
 		"./tsconfig": {
@@ -21,6 +22,9 @@
 		},
 		"./vite": {
 			"import": "./lib/importable-yaml-rollup.mjs"
+		},
+		"./webpack": {
+			"require": "./lib/importable-yaml-webpack.mjs"
 		}
 	},
 	"files": [
