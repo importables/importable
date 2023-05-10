@@ -9,6 +9,7 @@
 		"serve": "astro preview"
 	},
 	"devDependencies": {
+		"@astrojs/language-server": "^1.0",
 		"@importable/document": "*",
 		"@importable/machine": "*",
 		"@importable/yaml": "*",

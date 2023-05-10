@@ -19,6 +19,8 @@
 		"**/node_modules": true,
 	},
 
+	"astro.language-server.ls-path": "node_modules/@astrojs/language-server/bin/nodeServer.js",
+
 	"javascript.preferences.importModuleSpecifier": "non-relative",
 	"javascript.preferences.importModuleSpecifierEnding": "auto",
 	"javascript.preferences.quoteStyle": "single",

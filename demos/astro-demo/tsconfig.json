@@ -6,9 +6,9 @@
 			{
 				"name": "importable",
 				"plugins": [
-					"@importable/document/kdl/tsconfig",
-					"@importable/machine/css/tsconfig",
-					"@importable/yaml/tsconfig"
+					"@importable/document",
+					"@importable/machine",
+					"@importable/yaml"
 				]
 			}
 		]

@@ -9,12 +9,15 @@
 			"import": "./lib/importable-yaml-tsconfig.mjs",
 			"require": "./lib/importable-yaml-tsconfig.cjs"
 		},
+		"./astro": {
+			"import": "./lib/importable-yaml-astro.mjs"
+		},
+		"./next": {
+			"require": "./lib/importable-yaml-next.cjs"
+		},
 		"./tsconfig": {
 			"import": "./lib/importable-yaml-tsconfig.mjs",
 			"require": "./lib/importable-yaml-tsconfig.cjs"
-		},
-		"./astro": {
-			"import": "./lib/importable-yaml-astro.mjs"
 		},
 		"./vite": {
 			"import": "./lib/importable-yaml-rollup.mjs"
@@ -29,6 +32,7 @@
 	"devDependencies": {
 		"astro": "^2.4",
 		"importable": "*",
+		"next": "^13.4",
 		"vite": "^4.3"
 	},
 	"repository": {
