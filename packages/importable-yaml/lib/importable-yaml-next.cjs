@@ -1,7 +1,7 @@
 // @ts-check
 
 /** @typedef {import('next').NextConfig} NextConfig */
-/** @typedef {{ (): { (nextConfig: Partial<NextConfig>): NextConfig } }} NextPlugin */
+/** @typedef {{ (nextConfig: Partial<NextConfig>): NextConfig }} NextPlugin */
 
 import { resolve } from 'node:path'
 

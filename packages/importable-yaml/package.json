@@ -3,7 +3,7 @@
 	"name": "@importable/yaml",
 	"description": "Import YAML files with strong typing based on import attributes",
 	"type": "module",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"exports": {
 		".": {
 			"import": "./lib/importable-yaml-tsconfig.mjs",
