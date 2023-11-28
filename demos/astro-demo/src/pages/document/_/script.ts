@@ -1,3 +1,3 @@
-import doc from './document.kdl' assert { type: 'document', from: 'kdl' }
+import doc from './document.kdl' with { type: 'document', from: 'kdl' }
 
 console.log({ doc })

@@ -10,8 +10,8 @@
 		"allowImportingTsExtensions": true,
 		"module": "ESNext",
 		"moduleDetection": "force",
-		"moduleResolution": "nodenext",
-		"resolveJsonModule": true,
+		"moduleResolution": "Bundler",
+		"resolveJsonModule": false,
 
 		/* Emit */
 		"noEmit": true,
@@ -21,7 +21,7 @@
 		"allowJs": true,
 
 		/* Interop Constraints */
-		"esModuleInterop": true,
+		"esModuleInterop": false,
 		"isolatedModules": true,
 		"forceConsistentCasingInFileNames": true,
 		"verbatimModuleSyntax": true,

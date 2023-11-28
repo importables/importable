@@ -1,3 +1,3 @@
-import machine from './machine.css' assert { type: 'machine', from: 'css' }
+import machine from './machine.css' with { type: 'machine', from: 'css' }
 
 machine.transition('active', 'toggle')

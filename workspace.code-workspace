@@ -21,8 +21,8 @@
 			"path": "packages/importable"
 		},
 		{
-			"name": "📜 demo",
-			"path": "demo"
+			"name": "📜 demos",
+			"path": "demos"
 		}
 	],
 	"settings": {

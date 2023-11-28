@@ -1,4 +1,4 @@
-import config from './config.yml' assert { type: 'yaml' }
+import config from './config.yml' with { type: 'yaml' }
 
 import './style.css'
 

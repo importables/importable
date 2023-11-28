@@ -1,5 +1,5 @@
 import { interpret } from '@xstate/fsm'
-import machine from './machine.css' assert { type: 'machine', from: 'css' }
+import machine from './machine.css' with { type: 'machine', from: 'css' }
 
 const service = interpret(machine)
 

@@ -3,7 +3,7 @@
 **Importable Machine** allows you to import state machines with strong typing based on import attributes (_presently import assertions_).
 
 ```js
-import machine from './machines.css' assert { type: 'machine', from: 'css' }
+import machine from './machines.css' with { type: 'machine', from: 'css' }
 
 machine.transition('active', 'toggle')
 

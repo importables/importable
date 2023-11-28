@@ -3,7 +3,7 @@
 **Importable YAML** allows you to import YAML files with strong typing based on import attributes (_presently import assertions_).
 
 ```js
-import config from './config.yml' assert { type: 'yaml' }
+import config from './config.yml' with { type: 'yaml' }
 
 console.assert(config.doe === 'a deer, a female deer')
 ```
